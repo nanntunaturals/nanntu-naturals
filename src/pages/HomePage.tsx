@@ -5,7 +5,6 @@ import { FeatureSection } from '../components/sections/FeatureSection';
 import { WhyChooseSection } from '../components/sections/WhyChooseSection';
 import { FloatingBees } from '../components/common/FloatingBees';
 import { LeafParticles } from '../components/common/LeafParticles';
-import HoneySlider from '../components/sections/HoneySlider';
 
 const PageWrapper = styled.div`
   position: relative;
