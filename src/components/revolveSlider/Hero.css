@@ -1,0 +1,170 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.hero {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+  }
+  
+
+  .hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  }
+  .left-side{
+    z-index: 999;
+    position: absolute;
+    transform: rotate(-30deg) ;
+    opacity: 50% !important;
+    left: -100px;
+  }
+  .right-side{
+    z-index: 999;
+    position: absolute;
+    transform: rotate(30deg) ;
+    opacity: 50% !important;
+    right: -190px;
+  }
+  .hero-content {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    gap: 0px;
+    text-align: center;
+    padding: 0 20px;
+  }
+  
+  .hero-text{
+    position: relative;
+    top: -200px;
+  }
+  .hero-text h1 {
+    font-family: 'Dancing Script', cursive; 
+
+    font-size: 3.3rem;
+    margin-bottom: 15px;
+  }
+  
+  .hero-text p {
+    font-family: 'Dancing Script', cursive; 
+    font-size: 1.7rem;
+    line-height: 1.8;
+    max-width: 600px;
+    margin: 10px auto 0;
+    color: #f5f5f5;
+  }
+  
+  
+  .circular-slider {
+    position: relative;
+    top: -19px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .circle {
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .outer-circle {
+    position: absolute;
+top:-70px;
+    width: 1000px;
+    height:1000px;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+  }
+  
+  .inner-circle {
+    width: 900px;
+    height: 900px;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+  }
+  
+  .center-image {
+    width: 880px;
+    height: 880px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  
+  .center-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .circle-text {
+    position: absolute;
+top: -210px;
+  left: -670px;
+    width: 1340px;
+    transform: rotate(-91deg);
+    height: 1360px;
+    font-family: 'Playfair Display', serif;
+    text-transform: uppercase;
+    font-size: 18px;
+    pointer-events: none;
+  }
+  
+  
+  .circle-text text {
+    dominant-baseline: middle;
+    text-anchor: middle;
+    font-size: 19px;
+  }
+  .arrow {
+    position: absolute;
+    top: 300px;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.1); 
+    border: 1px solid white;
+    color: white;
+    font-size: 2rem;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    cursor: pointer;
+    backdrop-filter: blur(4px);
+    transition: all 0.3s ease;
+  }
+  
+  .arrow:hover {
+    background: rgba(255, 255, 255, 0.3);
+  }
+  
+  .arrow.left {
+    left: -680px;
+  }
+  
+  .arrow.right {
+    right: -680px;
+  }
+  .moving-ball {
+    position: absolute;
+    top: 50%;
+   left: 50%;
+    width: 20px;
+    height: 20px;
+    background: white;
+    border-radius: 50%;
+    transform-origin: 0 0; 
+    transition: transform 0.4s ease;
+  }
+  
